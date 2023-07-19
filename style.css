@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main{
+  flex-wrap: wrap;
+}
+
+/* Header Start */
+.fnavbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 10px 7%;
+  background-color: rgb(51, 51, 51);
+  border-bottom: 2px solid #2222228f;
+  box-shadow: 2px 2px 10px 2px #252525a2;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.logo {
+  position: relative;
+  font-size: 1.5rem;
+  max-width: 150px;
+  color: rgb(0, 165, 206);
+}
+
+.hama {
+  color: rgb(255, 20, 59);
+}
+
+.navbar {
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  margin-left: 50px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.navbar li a:hover {
+  color: rgb(0, 165, 206);
+  transition: all 0.2s ease-in;
+  
+}
+
+.nav-icon > a {
+  margin: 0 1rem;
+  color: #ffffff;
+}
+
+.nav-icon > a:hover {
+  color: rgb(0, 165, 206);
+  transition: all 0.2s ease-in;
+}
+
+#menu {
+  display: none;
+}
+/* Header End */
+
+main{
+  width: 100%;
+}
+
+/* Home Start */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 1.4rem 7%;
+  
+}
+
+.desk-home > h1 {
+  color: #2f58cd;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.desk-home > h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.logo-home {
+  font-size: 28px;
+  max-width: 150px;
+  color: rgb(0, 165, 206);
+}
+
+.desk-home > button {
+  position: relative;
+  top: 1rem;
+  background-color: rgb(255, 20, 59);
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  box-shadow: 4px 4px 6px 4px rgba(197, 197, 197, 0.959);
+}
+
+.desk-home > button:hover {
+  color: #ffffff;
+  background-color: rgb(0, 165, 206);
+  transform: scale(1.2);
+  transition: all 0.2s ease-in;
+}
+
+.desk-home img {
+  position: absolute;
+  width: 60rem;
+  left: 45rem;
+  top: 15rem;
+}
+
+.sosial-media {
+  position: absolute;
+  right: 0;
+  padding: 15px;
+  background-color: #007ec7;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  bottom: 10rem;
+}
+
+.sosial-media ul {
+  display: block;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1px 0.5rem;
+}
+
+.sosial-media ul li {
+  display: block;
+  justify-content: space-around;
+  margin-block: 30px;
+  color: #ffffff;
+  font-size: 2rem;
+}
+/* Home End */
+
+/* About Start */
+.about {
+  height: 100vh;
+  padding: 9rem 7% 1.4rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 2rem;
+}
+
+.desk-about {
+  position: relative;
+  bottom: 1rem;
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #ffc400;
+  right: 3rem;
+}
+
+.desk-about > h1 {
+  position: relative;
+  bottom: 1.5rem;
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: "Roboto-slab", sans-serif;
+}
+
+.desk-about > h2 {
+  position: relative;
+  bottom: 20px;
+  font-size: 3rem;
+  color: black;
+  border-bottom: 1px solid #cbced4;
+}
+
+.desk-about > p {
+  color: black;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.desk-about > button {
+  position: relative;
+  background-color: rgb(255, 20, 59);
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  text-transform: capitalize;
+  font-family: "Quicksand", sans-serif;
+  box-shadow: 4px 4px 6px 4px rgba(197, 197, 197, 0.959);
+}
+
+.desk-about > button:hover {
+  color: #ffffff;
+  background-color: rgb(0, 165, 206);
+  transform: scale(1.2);
+  transition: all 0.2s ease-in;
+}
+
+.ftech {
+  color: rgb(0, 165, 206);
+}
+
+.about article img {
+  width: 50rem;
+  margin-left: 40px;
+}
+/* About End */
+
+/* Class Start */
+.class {
+  background-color: #160040;
+  padding: 10rem 7% 1.4rem;
+  padding-bottom: 10rem;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 400px;
+  margin: 0 14rem;
+  position: relative;
+  right: 15rem;
+}
+
+.class article h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.class1 {
+  box-sizing: border-box;
+}
+
+.card2 {
+  height: 300px;
+  width: 300px;
+  padding: 20px 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card2 img {
+  width: 15rem;
+  border-radius: 200px;
+  margin-bottom: 55px;
+}
+
+.card2 h3 {
+  margin-bottom: 10px;
+  color: #3d014d;
+  font-weight: 700;
+}
+
+.card2 p {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+  box-shadow: 4px 4px 6px 4px rgba(97, 97, 97, 0.959);
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  padding: 20px 25px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+  box-shadow: 4px 4px 6px 4px rgba(97, 97, 97, 0.959);
+}
+
+.card img {
+  width: 15rem;
+  border-radius: 200px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  color: #3d014d;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.btn-class {
+  background-color: rgb(255, 20, 59);
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  text-transform: capitalize;
+  font-family: "Quicksand", sans-serif;
+}
+/* Class End */
+
+/* Tutors Start */
+.Tutors {
+  padding: 5rem 7% 3rem;
+  min-height: 400px;
+}
+
+.Tutors h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.Tutors h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.countainer-Tutors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 14rem;
+  position: relative;
+  right: 4.5rem;
+
+}
+
+.Tutors1 {
+  margin: 35px;
+  position: relative;
+  text-align: center;
+}
+
+.profil {
+  position: relative;
+  right: 10.5rem;
+}
+
+.profil h3 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cbced4;
+}
+
+.profil img {
+  margin: 0 0;
+  width: 18rem;
+  box-shadow: 4px 4px 6px 4px rgba(97, 97, 97, 0.959);
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+/* Tutors End */
+
+/* biodata start */
+.biodata {
+  min-height: 500px;
+  padding: 10rem 7% 1.4rem;
+  background-color: #2e2e2e;
+}
+
+.biodata-countainer {
+  position: relative;
+  left: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.foto {
+  position: relative;
+  bottom: 150px;
+  left: 3rem;
+  padding: 10rem 7% 1.4rem;
+}
+
+.foto img {
+  width: 25rem;
+}
+
+.deskripsi-biodata {
+  position: relative;
+  bottom: 17rem;
+  color: #ffffff;
+}
+
+.deskripsi-biodata h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.deskripsi-biodata h2 {
+  margin-bottom: 5px;
+}
+
+.deskripsi-biodata h2 span {
+  color: #ffc400;
+}
+
+.deskripsi-biodata p {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.mysosmed {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 41rem;
+  bottom: 4rem;
+  color: #ffc400;
+}
+
+.mysosmed ul {
+  list-style-type: none;
+}
+
+.mysosmed li {
+  list-style-type: none;
+  margin-right: 15px;
+}
+
+.tbn-about {
+  position: relative;
+  top: 5rem;
+  right: 50rem;
+  background-color: #ffc400;
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  text-transform: capitalize;
+  border: 1px solid #ffc400;
+}
+
+.tbn-about:hover {
+  color: #ffffff;
+  background-color: transparent;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in;
+}
+/* biodata end */
+
+.contact {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cbced4;
+}
+
+.countainer-contact {
+  position: absolute;
+  text-align: center;
+  left: 50rem;
+}
+
+.countainer-contact h4 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.countainer-contact button {
+  background-color: rgb(255, 20, 59);
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+  text-transform: capitalize;
+  box-shadow: 4px 4px 6px 4px rgba(197, 197, 197, 0.959);
+}
+
+.countainer-contact button:hover {
+  color: #ffffff;
+  background-color: #007ec7;
+  transform: scale(1.2);
+  transition: all 0.2s ease-in;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 7%;
+}
+
+.alamat {
+  position: relative;
+  left: 30rem;
+}
+
+.alamat h1 {
+  margin-left: 20px;
+}
+
+.alamat ul {
+  display: flex;
+}
+
+.alamat li {
+  display: flex;
+  list-style: none;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.kontak {
+  position: relative;
+  right: 30rem;
+}
+
+.kontak:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Media break point dekstop */
+
+/* Media break point laptop */
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Media break point tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .fnavbar > .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #079ad4;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .fnavbar .navbar.active {
+    right: 0;
+  }
+
+  .navbar a {
+    color: #ffffff;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2 rem;
+  }
+
+  .navbar li a:hover {
+    color: white;
+    transform: none;
+  }
+
+  .countainer-about {
+    flex-wrap: wrap;
+  }
+}
